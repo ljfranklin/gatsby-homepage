@@ -30,7 +30,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-image": "gatsby build && pack build ljfranklin/gatsby-homepage:latest --path public/ --buildpack gcr.io/paketo-buildpacks/nginx --builder paketobuildpacks/builder:base"
   },
   "devDependencies": {
     "prettier": "^1.14.2"
